@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DutyFree / Головна</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍷</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/duty.png" width="50px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <div id="cartCounter" class="cart-counter">0</div> <!-- Здесь будет отображаться количество товаров в корзине -->
+            <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Спробуйте смак високоякісних преміальних напоїв!</h1>
+                <p>Відкрийте для себе світ вишуканих смаків із нашою колекцією преміальних всесвітньо відомих напоїв.</p>
+                <br>
+                <a href="tel:+380 99-377-98-36" class="phone-number">+380 99 377 98 36</a>
+                <a href="contact.html#quickOrderForm" class="btn">Зробити швидке замовлення ✔️</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------ featured categories --------------->
+
+
+
+<!-------------- Our Featured Products -------------->
+
+
+<div class="small-container">
+    <h2 class="title">Горілка</h2>
+    <div class="row">
+        <div class="col-4" id="product-5">
+            <a href="product-details5.html">  <!-- Добавлен тег <a> -->
+                <img src="images/pshenichna.jpg">
+                <h4>Горілка "Пшенична"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>750грн - 1 шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>750грн - 1 шт</option>
+                    <option>700грн - 6 шт</option>
+                    <option>650грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="5">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-5">
+                Товар додано до кошика!
+            </div>
+        </div>
+
+        <div class="col-4" id="product-1">
+            <a href="product-details.html">  <!-- Добавлен тег <a> -->
+                <img src="images/finlandia_vodka.jpg">
+                <h4>Горілка "Finlandia"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>290грн - 1 шт</p>
+            </a>
+            <div class="select-and-button">
+            <select>
+                <option value="" disabled selected>Виберіть кількість</option>
+                <option>290грн - 1 шт</option>
+                <option>275грн - 6шт</option>
+                <option>250грн - 12шт</option>
+            </select>
+            <button class="btn add-to-cart-btn" data-product-id="1">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-1">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-15">
+            <a href="product-details15.html">  <!-- Добавлен тег <a> -->
+                <img src="images/jelzin_vodka.jpg">
+                <h4>Горілка "Jelzin"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>290грн - 1 шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>290грн - 1 шт</option>
+                    <option>275грн - 6шт</option>
+                    <option>250грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="15">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-15">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-14">
+            <a href="product-details14.html">  <!-- Добавлен тег <a> -->
+                <img src="images/gray_goose.jpg">
+                <h4>Горілка "Grey Goose"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>290грн - 1 шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>290грн - 1 шт</option>
+                    <option>275грн - 6шт</option>
+                    <option>250грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="14">Додати в кошик</button>
+            </div>
+
+            <div class="popup-message" id="popup-message-14">
+                Товар додано до кошика!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <h2 class="title">Коньяк</h2>
+    <div class="row">
+        <div class="col-4" id="product-6">
+            <a href="product-details6.html">  <!-- Добавлен тег <a> -->
+                <img src="images/janneau.jpg">
+                <h4>Коньяк "Janneau Napoleon"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="6">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-6">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-7">
+            <a href="product-details7.html">  <!-- Добавлен тег <a> -->
+                <img src="images/kvint.jpg">
+                <h4>Коньяк "Monte Choco Kvint"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="7">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-7">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-8">
+            <a href="product-details8.html">  <!-- Добавлен тег <a> -->
+                <img src="images/henessy.jpg">
+                <h4>Коньяк "Hennessy"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320 - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="8">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-8">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-10">
+            <a href="product-details10.html">  <!-- Добавлен тег <a> -->
+                <img src="images/napoleon.jpg">
+                <h4>Коньяк "Schevaler Napoleon"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="10">Додати в кошик</button>
+            </div>
+
+            <div class="popup-message" id="popup-message-10">
+                Товар додано до кошика!
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="small-container">
+    <h2 class="title">Віскі та Ром</h2>
+    <div class="row">
+        <div class="col-4" id="product-2">
+            <a href="product-details2.html">  <!-- Добавлен тег <a> -->
+                <img src="images/jack_daniels.jpg">
+                <h4>Віскі "Jack Daniel's"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="2">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-2">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-3">
+            <a href="product-details3.html">  <!-- Добавлен тег <a> -->
+                <img src="images/morgan_cap.jpg">
+                <h4>Ром "Captain Morgan"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="3">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-3">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-4">
+            <a href="product-details4.html">  <!-- Добавлен тег <a> -->
+                <img src="images/bacardi.jpg">
+                <h4>Ром "Bacardi"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="4">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-4">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-9">
+            <a href="product-details9.html">  <!-- Добавлен тег <a> -->
+                <img src="images/chivas_regal.jpg">
+                <h4>Віскі "Shivas Regal"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="9">Додати в кошик</button>
+            </div>
+            <div class="popup-message" id="popup-message-9">
+                Товар додано до кошика!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <h2 class="title">Віскі, Коньяк, Бренді</h2>
+    <div class="row">
+        <div class="col-4" id="product-11">
+            <a href="product-details11.html">  <!-- Добавлен тег <a> -->
+                <img src="images/metaxa.jpg">
+                <h4>Коньяк "Metaxa"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="11">Додати в кошик</button>
+            </div>
+
+            <div class="popup-message" id="popup-message-11">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-12">
+            <a href="product-details12.html">  <!-- Добавлен тег <a> -->
+                <img src="images/jameson.jpg">
+                <h4>Віскі "Jameson"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="12">Додати в кошик</button>
+            </div>
+
+            <div class="popup-message" id="popup-message-12">
+                Товар додано до кошика!
+            </div>
+        </div>
+        <div class="col-4" id="product-13">
+            <a href="product-details13.html">  <!-- Добавлен тег <a> -->
+                <img src="images/remy.jpg">
+                <h4>Бренді "St-Rémy"</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>360грн - 1шт</p>
+            </a>
+            <div class="select-and-button">
+                <select>
+                    <option value="" disabled selected>Виберіть кількість</option>
+                    <option>360грн - 1шт</option>
+                    <option>340грн - 6шт</option>
+                    <option>320грн - 12шт</option>
+                </select>
+                <button class="btn add-to-cart-btn" data-product-id="13">Додати в кошик</button>
+            </div>
+
+            <div class="popup-message" id="popup-message-13">
+                Товар додано до кошика!
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------offer--------------->
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/quality666.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Розкрийте смак найкращих напоїв!</p>
+                <br>
+                <small>Насолоджуйтесь найкращими напоями для вашого задоволення!У нашому інтернет-магазині ви знайдете величезний вибір високоякісних напоїв, які допоможуть вам розслабитися та насолодитися моментом. Наша колекція включає в себе горілку, ром, віскі, коньяк та багато інших ексклюзивних напоїв з усього світу.
+                    Ми гарантуємо якість і смак, які задовольнять ваші вимоги і створять особливі миті насолоди. Відкрийте для себе світ справжнього смаку та розкоші з нашими напоями.</small>
+                <br>
+                <a href="about.html" class="btn">Дізнатися більше &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------testimonial--------------->
+
+<div class="testimonial">
+    <div class="small-container">
+        <h2 class="title">Що кажуть про наші напої</h2>
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Наша сім'я завжди насолоджується чистими і якісними напоями, які ми знаходимо у вашому інтернет-магазині. Напої, такі як "Горілка Фінляндія" та "Ром Капітан Морган", завжди задовольняють наші вимоги щодо смаку та якості.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-1.png" alt="Користувач Sean Parker">
+                <h3>Катерина</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Ми завжди віддаємо перевагу напоям високої якості, і ваша продукція відповідає нашим очікуванням. "Шивас Рігал" і "Метакса" - це справжні скарби, які додають розкоші нашим особливим моментам.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-2.png" alt="Користувач Mike Smith">
+                <h3>Володимир</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Ваша колекція напоїв завжди вражає нас різноманітністю і смаком. "Жак Деніелс" і "Грей Гус" - це вишукані вибори для наших спеціальних вечорів.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="images/user-3.png" alt="Користувач Mabel Joe">
+                <h3>Наталія</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Brands--------------->
+<!--<div class="brands">
+    <div class="small-container">
+        <h2 class="title">Наші бренди</h2>
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo_Snizhna_Panda_1200.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images/helper.png">
+            </div>
+        </div>
+    </div>
+</div>-->
+<!----------Footer--------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col2">
+                <img src="images/duty.png" width="50px" height="200px">
+                <p>Наша мета – дати задоволення та користь від наших товарів доступними для багатьох.</p>
+            </div>
+        </div>
+        <div class="footer-col3">
+            <p class="phone"><a href="tel:+380 99-377-98-36">+380 99 377 98 36</a></p>
+        </div>
+        <hr>
+        <p class="copyright">2023 - Всі права захищені.</p>
+    </div>
+</div>
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+
+    let MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+<script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        addToCartButtons.forEach((btn) => {
+            btn.addEventListener('click', function () {
+                const productId = this.getAttribute('data-product-id');
+                const popup = document.getElementById(`popup-message-${productId}`);
+                popup.style.opacity = '1';
+                setTimeout(() => {
+                    popup.style.opacity = '0';
+                }, 1500);
+                // Ваш код для добавления товара в корзину
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
+

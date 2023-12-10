@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore / Про нас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍷</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <div id="cartCounter" class="cart-counter">0</div> <!-- Здесь будет отображаться количество товаров в корзине -->
+            <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Про нашу компанію</h1>
+                <p>Відкрийте для себе світ вишуканих смаків із нашою колекцією преміальних всесвітньо відомих напоїв.</p>
+                <br>
+                <a href="tel:+380 99-377-98-36" class="phone-number">+380 99 377 98 36</a>
+                <a href="contact.html#quickOrderForm" class="btn">Зробити швидке замовлення ✔️</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+    <h2 class="title">Що ми гарантуємо</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ми гарантуємо вам високу якість товарів та 💯% задоволеність наших клієнтів.</h4>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ми пропонуємо швидку доставку за 1-2 дні, використовуючи різні зручні види транспорту 🚌🚄.</h4>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ваше задоволення є нашим пріоритетом 😊. Ми завжди готові робити все, щоб ви залишилися задоволені своїм вибором 🌟.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about us content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>
+                Ми - українська компанія, що спеціалізується на продажу вишуканих алкогольних напоїв світового класу. </h1>
+            <p>Упродовж п'яти років успішної діяльності на ринку ми здобули великий досвід та визнання серед наших клієнтів. Наш асортимент налічує найкращі бренди, серед яких горілка Фінляндія, ром Капітан Морган, Бакарді, Джек Деніелс, Shivas Regal, Napoleon Janneau, Jameson, Kvint, Metava, Hennesy, Grey Goose. Ми прагнемо задовольнити смаки найвибагливіших клієнтів, надаючи їм можливість насолоджуватися найкращими алкогольними виборами для своїх особливих моментів та подій</p>
+            <p>Наша компанія завжди ставить на перше місце якість та задоволення клієнтів, пропонуючи неперевершений смак і ексклюзивний асортимент. Ми пишаємося нашою репутацією та надійністю серед людей, які цінують вишуканість і неперевершеність у виборі алкогольних напоїв. Наша мета - забезпечити наших клієнтів найкращими продуктами на ринку і зробити кожен їхній момент особливим та незабутнім.
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<!------------------ featured categories --------------->
+
+
+<!-------------- Our Featured Products -------------->
+
+
+
+<!----------offer--------------->
+
+
+<!----------testimonial--------------->
+
+<!----------Brands--------------->
+<!----------Footer--------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col2">
+                <img src="images/logo.png">
+                <p>Наша мета – дати задоволення та користь від наших товарів доступними для багатьох.</p>
+            </div>
+        </div>
+        <div class="footer-col3">
+            <p class="phone"><a href="tel:+380 99-377-98-36">+380 99 377 98 36</a></p>
+        </div>
+        <hr>
+        <p class="copyright">2023 - Всі права захищені.</p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/basket.js/0.5.2/basket.full.min.js"></script>
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+
+    let MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+<script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        addToCartButtons.forEach((btn) => {
+            btn.addEventListener('click', function () {
+                const productId = this.getAttribute('data-product-id');
+                const popup = document.getElementById(`popup-message-${productId}`);
+                popup.style.opacity = '1';
+                setTimeout(() => {
+                    popup.style.opacity = '0';
+                }, 1500);
+                // Ваш код для добавления товара в корзину
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
+

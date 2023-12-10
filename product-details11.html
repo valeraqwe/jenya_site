@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore / Metaxa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍷</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <div id="cartCounter" class="cart-counter">0</div>
+        <!-- Здесь будет отображаться количество товаров в корзине -->
+        <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+    </div>
+
+</div>
+
+
+<!--------------single-product--------------->
+
+<div class="small-container single-product" id="product-11">
+    <div class="row">
+        <div class="col-2" >
+            <img src="images/metaxa.jpg" width="100%" id="ProductImg">
+        </div>
+        <div class="col-2">
+            <h4>Коньяк "Metaxa"</h4>
+            <p>360грн - 1шт</p>
+            <select>
+                <option value="" disabled selected>Виберіть кількість</option>
+                <option>360грн - 1шт</option>
+                <option>340грн - 6шт</option>
+                <option>Договорная - 12шт</option>
+            </select>
+
+            <button class="btn add-to-cart-btn" data-product-id="11">Додати в кошик</button>
+            <div class="popup-message" id="popup-message-11">
+                Товар додано до кошика!
+            </div>
+
+            <h3>Деталі продукту<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Metaxa - це відомий грецький бренд коньяку, який вражає своєю неперевершеною якістю та особливим смаком. Він виробляється зі спеціальної комбінації вин, дистилятів і ароматних трав, а потім витримується в дубових бочках для досягнення глибшого та складнішого смаку. Metaxa має виразний аромат з відтінками цитрусових фруктів і спецій, а його ніжний смак з багатогранними нотками меду і ванілі робить його вишуканим напоєм.
+                Цей грецький коньяк є втіленням традицій та якості, і він завжди готовий подарувати вам незабутній смаковий досвід. Metaxa - це відмінний вибір для тих, хто цінує якість та екзотичний смак у своїх алкогольних напоях, і він стане чудовим доповненням до вашого колекції напоїв.</p>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+    <h2 class="title">Що ми гарантуємо</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ми гарантуємо вам високу якість товарів та 💯% задоволеність наших клієнтів.</h4>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ми пропонуємо швидку доставку за 1-2 дні, використовуючи різні зручні види транспорту 🚌🚄.</h4>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="category-item">
+                    <h4 class="category-text">Ваше задоволення є нашим пріоритетом 😊. Ми завжди готові робити все, щоб ви залишилися задоволені своїм вибором 🌟.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Footer--------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col2">
+                <img src="images/logo.png">
+                <p>Наша мета – дати задоволення та користь від наших товарів доступними для багатьох.</p>
+            </div>
+        </div>
+        <div class="footer-col3">
+            <p class="phone"><a href="tel:+380 99-377-98-36">+380 99 377 98 36</a></p>
+        </div>
+        <hr>
+        <p class="copyright">2023 - Всі права захищені.</p>
+    </div>
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+    //-------------Produc Gallery------------
+
+    var ProductImg = document.getElementById("ProductImg");
+
+    var SmallImg = document.getElementsByClassName("small-img");
+
+
+    SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+
+    }
+    SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+
+    }
+    SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+
+    }
+
+    //-------------End Produc Gallery------------
+
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        addToCartButtons.forEach((btn) => {
+            btn.addEventListener('click', function () {
+                const productId = this.getAttribute('data-product-id');
+                const popup = document.getElementById(`popup-message-${productId}`);
+                popup.style.opacity = '1';
+                setTimeout(() => {
+                    popup.style.opacity = '0';
+                }, 1500);
+                // Ваш код для добавления товара в корзину
+            });
+        });
+    });
+</script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
+
